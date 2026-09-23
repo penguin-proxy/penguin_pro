@@ -4,7 +4,7 @@ const errorCode = document.getElementById("uv-error-code");
 const registerButton = document.getElementById("uv-register-sw");
 
 if (location.pathname.startsWith(__uv$config.prefix)) {
-	error.textContent = "Error: The service worker is not registered.";
+	error.textContent = "🐧 penguin-pro: サービスワーカーが登録されていません。";
 	registerButton.classList.add("show");
 }
 
@@ -13,7 +13,7 @@ registerButton.addEventListener("click", async () => {
 		await registerSW();
 		location.reload();
 	} catch (err) {
-		error.textContent = "Failed to register service worker.";
+		error.textContent = "🐧 penguin-pro: サービスワーカーの登録に失敗しました。";
 		errorCode.textContent = err.toString();
 		registerButton.classList.remove("show");
 	}
