@@ -1,48 +1,44 @@
 <!doctype html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 		/>
-		<title>Ultraviolet | Error</title>
-		<meta
-			name="description"
-			content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-		/>
-		<meta
-			name="theme-color"
-			media="(prefers-color-scheme: dark)"
-			content="#434c5e"
-		/>
+		<title>404 Not Found | penguin-pro</title>
+		<meta name="description" content="penguin-pro 404 error page" />
 		<meta name="googlebot" content="noindex, nofollow, nosnippet" />
 		<base href="/" />
-		<link rel="shortcut icon" content="favicon.ico" />
+		<link rel="icon" type="image/jpeg" href="IMG_0739.jpeg" />
 		<link rel="stylesheet" href="index.css" />
 	</head>
 
 	<body>
-		<div class="logo-wrapper left-margin">
-			<h1>Ultraviolet | Error</h1>
-		</div>
-		<div class="desc left-margin">
-			<p>The server could not route your request.</p>
-			<p id="uv-error"></p>
-			<code id="uv-error-code"></code>
-			<button id="uv-register-sw" value="Register service worker">
-				Register ServiceWorker
-			</button>
-		</div>
-		<footer>
-			<a
-				title="License information"
-				href="credits.html"
-				style="margin-left: auto"
-				>Credits</a
-			>
-			<span>Ultraviolet &copy; TN 2022</span>
-		</footer>
+		<main class="main-container">
+			<!-- ヘッダーエリア -->
+			<div class="penguin-header">
+				<div class="penguin-icon">🐧</div>
+				<h1>404 Not Found</h1>
+				<p class="subtitle">ページが見つかりませんでした</p>
+			</div>
+
+			<!-- エラーメッセージ・再登録ボタン -->
+			<div class="error-container" style="margin-bottom: 25px;">
+				<p id="uv-error"></p>
+				<pre id="uv-error-code"></pre>
+				<button id="uv-register-sw" value="Register service worker" style="margin-top: 15px; padding: 10px 20px; border-radius: 20px; border: none; background: #0284c7; color: white; cursor: pointer; font-family: inherit; font-weight: 500;">
+					ServiceWorkerを再登録
+				</button>
+			</div>
+
+			<!-- トップページに戻るボタン -->
+			<a href="/" style="color: #0284c7; text-decoration: none; font-weight: 500; padding: 10px 22px; border: 1.5px solid #0284c7; border-radius: 24px; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(8px); transition: all 0.2s;">
+				← ホームに戻る
+			</a>
+		</main>
+
+		<!-- 内部処理スクリプト（削除不可） -->
 		<script src="uv/uv.bundle.js"></script>
 		<script src="uv/uv.config.js"></script>
 		<script src="register-sw.js"></script>
