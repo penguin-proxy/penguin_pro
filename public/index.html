@@ -6,10 +6,10 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
 		/>
-		<title>検索 | Search</title>
+		<title>penguin-pro</title>
 		<meta
 			name="description"
-			content="シンプルなウェブ検索ポータル"
+			content="penguin-pro portal"
 		/>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<link rel="stylesheet" href="index.css" />
@@ -21,16 +21,14 @@
 
 	<body>
 		<main class="main-container">
-			<!-- 富士山イメージのヘッダーロゴ（テキストデザイン） -->
-			<div class="fuji-header">
-				<div class="fuji-icon">
-					<span class="fuji-snow">▲</span>
-				</div>
+			<!-- ペンギンロゴ＆タイトルエリア -->
+			<div class="penguin-header">
+				<div class="penguin-icon">🐧</div>
 				<h1>penguin-pro</h1>
 				<p class="subtitle">Made by penguin.</p>
 			</div>
 
-			<!-- 検索フォーム（機能は完全維持） -->
+			<!-- 検索フォーム（機能はそのまま維持） -->
 			<form id="uv-form" class="search-form">
 				<input
 					id="uv-search-engine"
@@ -44,7 +42,7 @@
 					<input
 						id="uv-address"
 						type="text"
-						placeholder="URLを直接入力"
+						placeholder="URL または 検索キーワードを入力"
 						autocomplete="off"
 					/>
 				</div>
@@ -57,7 +55,7 @@
 			</div>
 		</main>
 
-		<!-- 内部処理用フレーム＆スクリプト（削除不可） -->
+		<!-- 内部処理用フレーム＆スクリプト -->
 		<iframe style="display: none" id="uv-frame"></iframe>
 		<script src="register-sw.js"></script>
 		<script src="search.js"></script>
